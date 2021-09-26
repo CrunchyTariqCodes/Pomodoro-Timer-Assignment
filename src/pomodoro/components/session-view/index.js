@@ -7,7 +7,7 @@ const SessionDisplay = ({ session, focusDuration, breakDuration }) => {
   //declares variable as the timeRemaining value in the session object if the session object exists exists
   const timeRemaining = session ? session.timeRemaining : null;
 
-  //returns either the focu or break duration values depending on which value the session label key is currently holding
+  //returns either the focus or break duration values depending on which value the session label key is currently holding
   const sessionInMinutes = () => {
     switch (session?.label) {
       case "Focusing": {
